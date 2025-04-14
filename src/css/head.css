@@ -1,48 +1,39 @@
+/* General styles */
 .header {
   background-color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   height: 50px;
   width: 100%;
+  position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
 }
 
-.logo{
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
   width: 50px;
+  height: auto;
   margin-right: 10px;
 }
 
-.header i {
-  display: none;
-}
-
-.header .btn {
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  text-decoration: none;
-  margin: 0 15px;
-  border-radius: .5rem;
-}
-
-.header .btn:hover{
-  border-bottom-style: solid;
-  background-color: rgb(33,45,58);
-  color: white;
-}
-
-.site-title{
-  text-decoration: none;
+.site-title h4 {
+  margin: 0;
 }
 
 h4 {
   color: rgb(0, 0, 0);
   margin: 0;
   padding-left: 0;
-  
 }
 
 nav.responsive-bar {
+  display: flex;
   position: sticky; /* Solo el nav se queda pegado arriba */
   width: auto;
   margin-right: 20px;
@@ -50,25 +41,85 @@ nav.responsive-bar {
 
 nav.responsive-bar ol {
   display: flex;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav.responsive-bar ol li {
   list-style-type: none;
+  margin: 0 10px;
 }
 
-.header-left{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header .btn {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  margin: 0 15px;
+  border-radius: .5rem;
 }
 
-@media (max-width: 1200px) {
-  nav.responsive-bar-show ol{
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.header .btn:hover {
+  border-bottom-style: solid;
+  background-color: rgb(33,45,58);
+  color: white;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Asegura que esté alineado a la derecha */
+  top: 50%; /* Centra verticalmente */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  margin-right: 3%;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .hamburger {
+    display: block; /* Muestra el botón en pantallas pequeñas */
   }
+
+  nav.responsive-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  nav.responsive-bar.open {
+    display: flex;
+  }
+
+  nav.responsive-bar ol {
+    flex-direction: column;
+  }
+
+  nav.responsive-bar ol li {
+    margin: 10px 0;
+  }
+  .menu-legend{
+    display: block;
+  }
+}
+
+/* Estilo para la leyenda "Menu" */
+.menu-legend {
+    display: hidden; /* Oculta el texto por defecto */
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    border-bottom: solid 2px #ccc;
 }

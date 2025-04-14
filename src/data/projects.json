@@ -1,0 +1,46 @@
+
+[
+    {
+        "id": 1,
+        "nombre": "Sabores de Mexico",
+        "enlace": "https://altem.studio/Pages/Sabores-de-mexico/index.html",
+        "lenguajes": "HTML, CSS, Js, JQuery",
+        "img": "Sabores.png",
+        "descripcion": "Esta página fue desarrollada utilizando fundamentos de HTML y CSS para su interfaz frontal.\n\nSabores de México es un sitio web creado con el propósito de recopilar y difundir parte del significado cultural y tradicional de la gastronomía mexicana.\n\nEn este espacio, se exhiben diversos platillos típicos, acompañados de sus respectivas recetas. Estas incluyen una descripción detallada de los ingredientes requeridos, así como instrucciones claras y concisas para su preparación."
+    },{
+        "id": 2,
+        "nombre": "Numeros Primos",
+        "enlace": "https://github.com/Altem1/Numeros-Primos-",
+        "lenguajes": "Python",
+        "img": "Primos.png",
+        "descripcion": "Este programa fue desarrollado íntegramente en Python.\n\nFuncionalidades principales:\n\n1. Determinación de primalidad: Evalúa si un número es primo o no.\n2. Generador aleatorio: Produce números al azar entre 1 y 100.\n\nDesarrollado como parte de un proyecto académico para implementar:\n- Un sistema de lotería numérica\n- Un juego de adivinanza de números primos"
+    },{
+        "id": 3,
+        "nombre": "Practicas en C++",
+        "enlace": "https://github.com/Altem1/Practicar-C-",
+        "lenguajes": "C++",
+        "img": "C++.png",
+        "descripcion": "Repositorio académico que documenta mi evolución en programación durante la preparatoria.\n\nIncluye desde ejercicios básicos de E/S hasta un sistema completo:\n\n• Menú interactivo para restaurante con:\n  - Selección de platillos\n  - Cálculo automático de totales\n  - Reinicio para múltiples pedidos\n\nTecnologías aplicadas:\n- Lógica de programación estructurada\n- Funciones modularizadas\n- Código autodocumentado"
+    },{
+        "id": 4,
+        "nombre": "App notas y dibujos",
+        "enlace": "https://gallery.appinventor.mit.edu/?galleryid=20e18103-76dd-47fe-88c1-7497dac00d9f",
+        "lenguajes": "MIT App Inventor",
+        "img": "AppNotas.png",
+        "descripcion": "App desarrollada en MIT App Inventor con dos funciones:\n\n• Notas:\n  - Escribe y guarda textos permanentemente\n\n• Dibujo:\n  - Crea ilustraciones con:\n    - Diferentes colores\n    - Grosores de pincel\n\nA pesar de usar bloques, la aplicación es completamente funcional."
+    },{
+        "id": 5,
+        "nombre": "Acerca de mi...",
+        "enlace": "https://altem.studio/Pages/Acerca-de/index.html",
+        "lenguajes": "HTML, CSS, Js",
+        "img": "Altem.png",
+        "descripcion": "Sitio web personal desarrollado como proyecto universitario, implementando:\n\n• Frontend básico con:\n  - HTML semántico\n  - Estilos CSS personalizados\n\nContenidos principales:\n1. Trayectoria académica:\n   - Evolución formativa\n   - Logros destacados\n2. Perfil personal:\n   - Intereses profesionales\n   - Aficiones y hobbies\n\nObjetivo del proyecto:\n- Demostrar competencias en desarrollo web\n- Presentar un perfil integral (académico/personal)"
+    },{
+        "id": 6,
+        "nombre": "Portafolio",
+        "enlace": "",
+        "lenguajes": "React, Js, Css",
+        "img": "Altem.png",
+        "descripcion": "Portafolio profesional construido con:\n\n- React (via Create React App)\n- JavaScript moderno\n- CSS vanilla para diseño\n\nCaracterísticas:\n• SPA (Single Page Application)\n• Estructura componentizada\n• Estilos escritos manualmente\n• Uso mínimo de HTML (solo en root)"
+    }
+]

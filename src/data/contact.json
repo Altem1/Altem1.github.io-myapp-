@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "tipo": "Correo",
+        "dato": "joseemilio753@gmail.com",
+        "enlace": "mailto:joseemilio753@gmail.com",
+        "ico": "fa-regular fa-envelope"
+    },
+    {
+        "id": 2,
+        "tipo": "WhatsApp",
+        "dato": "444 319 3339",
+        "enlace": "https://wa.me/524443193339",
+        "ico": "fa-brands fa-whatsapp"
+    },
+    {
+        "id": 3,
+        "tipo": "GitHub",
+        "dato": "@Altem1",
+        "enlace": "https://github.com/Altem1",
+        "ico": "fa-brands fa-github"
+    },{
+        "id": 4,
+        "tipo": "Teléfono",
+        "dato":"444 319 3339",
+        "enlace": "",
+        "ico":"fa-brands fa-whatsapp"
+    },{
+        "id": 5,
+        "tipo": "Twitter",
+        "dato": "@SeAltem0",
+        "enlace": "https://x.com/SeAltem0?t=c_bLdKQf0B-lRKALW9YBmg&s=08",
+        "ico": "fa-brands fa-twitter"
+    },{
+        "id": 6,
+        "tipo": "LinkedIn",
+        "dato": "Jose Antonio",
+        "enlace": "https://www.linkedin.com/in/jose-antonio-baaa1216a/",
+        "ico": "fa-brands fa-linkedin"
+    }
+]

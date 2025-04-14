@@ -1,47 +1,51 @@
-.Footer {
-    justify-content: center; /* Centra los ol horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    gap: 20px; /* Espacio entre listas */
-    width: 100%;
+/* Redes sociales */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background-color: rgb(33,45,58);
     color: white;
-    position: relative;
-    bottom: 0;
-    margin-top: auto;
-    padding: 10px 0;    
+    padding: 10px 0;
 }
 
-ol {
-    
-    list-style: none; /* Quita los estilos de lista */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
-    padding: 10px 0 0 0;
+.footer-social div {
+    text-align: center;
 }
 
-.enlace {
-    gap: 20px; /* Espacio entre los elementos <li> */
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.imagen {
-    gap: 30px; /* Espacio entre imágenes */
-    margin-top: 0px;
-    padding-bottom: 0px;
-}
-
-.imagen li{
-    width: 50px;
-}
-
-.img-footer{
-    width: 30px;
-}
-
-a{
-    text-decoration: none;
+.footer-social p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
     color: white;
+}
+
+/* Íconos de Font Awesome */
+.footer-social a {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+    color: #3b82f6; /* Cambia el color al pasar el cursor */
+}
+
+/* Enlaces generales */
+.enlace {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.enlace li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace li a:hover {
+    text-decoration: underline;
 }

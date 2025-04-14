@@ -16,3 +16,14 @@
     margin: 0 auto;
     width: 70%;
 }
+
+@media (max-width: 770px) {
+    .container-about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .foto-about img{
+        width: 70%;
+    }
+    
+}
