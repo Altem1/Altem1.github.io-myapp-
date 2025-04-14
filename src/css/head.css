@@ -8,12 +8,16 @@
   height: 50px;
   width: 100%;
   position: relative;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+a{
+  text-decoration: none;
 }
 
 .header-left {
   display: flex;
-  align-items: center;
+    align-items: center;
 }
 
 .logo {
@@ -24,16 +28,16 @@
 
 .site-title h4 {
   margin: 0;
-  color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);
   padding-left: 0;
-  text-decoration: none;
+text-decoration: none;
 }
 
 h4 {
   color: rgb(0, 0, 0);
   margin: 0;
   padding-left: 0;
-  text-decoration: none;
+text-decoration: none;
 }
 
 nav.responsive-bar {
@@ -71,21 +75,21 @@ nav.responsive-bar ol li {
 
 /* Hamburger button */
 .hamburger {
-  display: none;
+  display: none; 
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1000;
-  margin-left: 10px; /* Ajusta el espacio entre el botón y el texto */
+    z-index: 1000;
+margin-left: 10px; /* Ajusta el espacio entre el botón y el texto */
 }
 
 /* Responsive styles */
 @media (max-width: 900px) {
   .hamburger {
     display: block; /* Muestra el botón en pantallas pequeñas */
-    position: relative; /* Asegura que se alinee dentro del flujo del header */
-    margin-left: 0; /* Elimina márgenes innecesarios */
+position: relative; /* Asegura que se alinee dentro del flujo del header */
+margin-left: 0; /* Elimina márgenes innecesarios */
   }
 
   nav.responsive-bar {
@@ -98,7 +102,7 @@ nav.responsive-bar ol li {
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 999;
-    width: auto; /* Ajusta el ancho automáticamente */
+width: auto; /* Ajusta el ancho automáticamente */
   }
 
   nav.responsive-bar.open {
@@ -107,7 +111,7 @@ nav.responsive-bar ol li {
 
   nav.responsive-bar ol {
     flex-direction: column;
-    padding: 0;
+padding: 0;
     margin: 0;
   }
 
@@ -122,11 +126,11 @@ nav.responsive-bar ol li {
 
 /* Estilo para la leyenda "Menu" */
 .menu-legend {
-  display: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #333;
-  border-bottom: solid 2px #ccc;
+display: none;
+           font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    border-bottom: solid 2px #ccc;
 }

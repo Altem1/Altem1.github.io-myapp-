@@ -3,7 +3,7 @@
     {
         "id": 1,
         "nombre": "Sabores de Mexico",
-        "enlace": "http://altem.ninja/Pages/Sabores-de-mexico/index.html",
+        "enlace": "https://altem1.github.io/Saboresdemexico.github.io/",
         "lenguajes": "HTML, CSS, Js, JQuery",
         "img": "Sabores.png",
         "descripcion": "Esta página fue desarrollada utilizando fundamentos de HTML y CSS para su interfaz frontal.\n\nSabores de México es un sitio web creado con el propósito de recopilar y difundir parte del significado cultural y tradicional de la gastronomía mexicana.\n\nEn este espacio, se exhiben diversos platillos típicos, acompañados de sus respectivas recetas. Estas incluyen una descripción detallada de los ingredientes requeridos, así como instrucciones claras y concisas para su preparación."
@@ -31,7 +31,7 @@
     },{
         "id": 5,
         "nombre": "Acerca de mi...",
-        "enlace": "http://altem.ninja/Pages/Acerca-de/index.html",
+        "enlace": "https://altem1.github.io/AcercaDeMi.github.io/",
         "lenguajes": "HTML, CSS, Js",
         "img": "Altem.png",
         "descripcion": "Sitio web personal desarrollado como proyecto universitario, implementando:\n\n• Frontend básico con:\n  - HTML semántico\n  - Estilos CSS personalizados\n\nContenidos principales:\n1. Trayectoria académica:\n   - Evolución formativa\n   - Logros destacados\n2. Perfil personal:\n   - Intereses profesionales\n   - Aficiones y hobbies\n\nObjetivo del proyecto:\n- Demostrar competencias en desarrollo web\n- Presentar un perfil integral (académico/personal)"
