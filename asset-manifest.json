@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/myapp/static/css/main.d2af71ea.css",
+    "main.js": "/myapp/static/js/main.6753dc36.js",
+    "static/js/453.64512fd7.chunk.js": "/myapp/static/js/453.64512fd7.chunk.js",
+    "static/media/Primos.png": "/myapp/static/media/Primos.546ea02080fe737330c7.png",
+    "static/media/Sabores.png": "/myapp/static/media/Sabores.85a336ef47151d5f3fd3.png",
+    "static/media/Altem.png": "/myapp/static/media/Altem.cc45c51be98a6cc55a81.png",
+    "static/media/AppNotas.png": "/myapp/static/media/AppNotas.2b8163cdb7224a863117.png",
+    "static/media/C++.png": "/myapp/static/media/C++.e6de22a81b049b3abc11.png",
+    "static/media/LogoGit.png": "/myapp/static/media/LogoGit.0c9c352f7bfb0e7368be.png",
+    "index.html": "/myapp/index.html",
+    "main.d2af71ea.css.map": "/myapp/static/css/main.d2af71ea.css.map",
+    "main.6753dc36.js.map": "/myapp/static/js/main.6753dc36.js.map",
+    "453.64512fd7.chunk.js.map": "/myapp/static/js/453.64512fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2af71ea.css",
+    "static/js/main.6753dc36.js"
+  ]
+}
