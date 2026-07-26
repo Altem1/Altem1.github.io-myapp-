@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Altem Site - Portafolio Personal 🧙‍♂️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Qué onda! Este es mi sitio web personal, un espacio que armé para ir documentando mis proyectos de la universidad y mis prácticas como estudiante de Ingeniería en Sistemas Inteligentes.
 
-## Available Scripts
+El objetivo principal es tener un lugar centralizado para mostrar mi evolución escribiendo código, desde cosas de desarrollo web hasta scripts más de bajo nivel, y de paso demostrar un poco de cómo monto mi propia infraestructura.
 
-In the project directory, you can run:
+## ¿Qué proyectos incluye?
 
-### `npm start`
+Actualmente, el portafolio documenta los siguientes trabajos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Acerca de mí:** Un resumen de mi trayectoria académica y perfil personal.
+* **App notas y dibujos:** Aplicación funcional desarrollada con MIT App Inventor.
+* **Prácticas en C++:** Repositorio de lógica estructurada que incluye un menú interactivo para un restaurante.
+* **Números Primos:** Programa hecho íntegramente en Python para evaluar si un número es primo o no, y generar secuencias aleatorias.
+* **Sabores de México:** Sitio web enfocado en la gastronomía mexicana y sus recetas, construido con HTML, CSS, JS y JQuery.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ¿Cómo está montado? (Infraestructura)
 
-### `npm test`
+Este sitio no está alojado en un servicio en la nube tradicional (tipo Vercel, AWS o Hostinger). Todo esto está corriendo desde mi propio entorno local sobre Debian.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A grandes rasgos, la arquitectura funciona así:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Servidor Web:** Utilizo Nginx para servir de forma eficiente el frontend y todos los archivos estáticos del sitio. 
+2. **Backend:** El mismo Nginx actúa como proxy inverso para gestionar el tráfico dinámico (como la subida de imágenes y el manejo de datos) y redirigirlo hacia una API construida con FastAPI (Python). 
+3. **Despliegue a Internet:** Tailscale Funnel.
+4. 
