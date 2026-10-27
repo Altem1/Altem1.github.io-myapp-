@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import AltemF from '../img/Altem.png';
 import '../css/AcercaDe.css';
 
@@ -56,31 +58,37 @@ const lenguajes = [
 
 const AppAcerca = () => {
     return (
-        <div className="container-about">
-            <div className="foto-about">
-                <img src={AltemF} className="img-mia" alt="foto mia" />
-            </div>
-            <div className="info-about">
-                <h2>Acerca de mi...</h2>
-                
-                {informacion.map((item) => (
-                    <p key={item.id}>
-                        <strong>{item.tipo}:</strong> {item.info}
-                    </p>
-                ))}
-                
-                <h3>Tengo conocimientos en:</h3>
-                
-                <div className="lenguajes-container">
-                    {lenguajes.map((lenguaje) => (
-                        <div key={lenguaje.id} className="lenguaje-item">
-                            <h4>{lenguaje.nombre}</h4>
-                            <p>Nivel: {lenguaje.nivel}</p>
-                        </div>
-                    ))}
+        <section className="wrap">
+            <div className="glass about">
+                <div className="foto-about">
+                    <img src={AltemF} alt="foto mia" />
+                </div>
+                <div className="info-about">
+                    <h2 className="title">Acerca de <span className="grad">mí...</span></h2>
+
+                    <dl className="datos">
+                        {informacion.map((item) => (
+                            <div key={item.id}>
+                                <dt>{item.tipo}</dt>
+                                <dd>{item.info}</dd>
+                            </div>
+                        ))}
+                    </dl>
                 </div>
             </div>
-        </div>
+
+            <h3 className="title-sm">Tengo conocimientos en:</h3>
+
+            <div className="lenguajes-container">
+                {lenguajes.map((lenguaje) => (
+                    <div key={lenguaje.id} className="glass card">
+                        <div className="ic"><FontAwesomeIcon icon={faCode} /></div>
+                        <h3>{lenguaje.nombre}</h3>
+                        <p>Nivel: {lenguaje.nivel}</p>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 }
 

@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/head';  // Importa Header
-import Footer from './components/footer'; // Importa Footer
+import Header from './components/head';
+import Footer from './components/footer';
 import './css/header-footer.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <div className="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
       <div className="page-container">
-        <Header /> {/* Ahora está definido */}
-        <div className="content">
+        <Header />
+        <main className="content">
           <App />
-
-        </div>
-        <Footer /> {/* Ahora está definido */}
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
   </React.StrictMode>

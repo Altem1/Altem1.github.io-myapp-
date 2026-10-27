@@ -1,51 +1,51 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "../css/head.css";
 import AltemF from '../img/Altem.png';
 
 const name = "Altem Site";
-const ver = "responsive-bar";
+
+const enlaces = [
+    { to: "/", texto: "Inicio" },
+    { to: "/proyectos", texto: "Proyectos" },
+    { to: "/acercade", texto: "Acerca de mí" },
+    { to: "/contactame", texto: "Contáctame" }
+];
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    // Cierra el menú móvil al cambiar de página
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location.pathname]);
 
     return (
-        <header className="header">
-            <div className="header-left">
-                <img src={AltemF} alt="Logo" className="logo" />
-                <Link to="/" className="site-title">
-                    <h4>{name}</h4>
+        <header className="nav wrap">
+            <div className="glass nav-bar">
+                <Link to="/" className="brand">
+                    <img src={AltemF} alt="Logo" />
+                    <span>{name}</span>
                 </Link>
+
+                <button
+                    className="hamburger"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Menú"
+                    aria-expanded={isMenuOpen}
+                >
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav className={`links ${isMenuOpen ? "open" : ""}`}>
+                    {enlaces.map((e) => (
+                        <NavLink key={e.to} to={e.to} end className="link">
+                            {e.texto}
+                        </NavLink>
+                    ))}
+                </nav>
             </div>
-
-            <button className="hamburger" onClick={toggleMenu}>
-                ☰
-            </button>
-
-            <nav className={`${ver} ${isMenuOpen ? "open" : ""}`}>
-                <ol>
-                    {isMenuOpen && (
-                        <li className="menu-legend">Menu</li>
-                    )}
-
-                    <li>
-                        <Link to="/" className="btn">Inicio</Link>
-                    </li>
-                    <li>
-                        <Link to="/proyectos" className="btn">Proyectos</Link>
-                    </li>
-                    <li>
-                        <Link to="/acercade" className="btn">Acerca de mí</Link>
-                    </li>
-                    <li>
-                        <Link to="/contactame" className="btn">Contactame</Link>
-                    </li>
-                </ol>
-            </nav>
         </header>
     );
 };

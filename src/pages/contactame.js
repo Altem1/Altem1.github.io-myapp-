@@ -28,46 +28,36 @@ const Contactame = () => {
   };
 
   return (
+    <section className="wrap">
+      <div className="me">
+        <img src={Me} alt="img alucion a mi" />
+        <h2 className="title">José Emilio <span className="grad">Antonio Jiménez</span></h2>
+      </div>
 
-    <div className="content-all">
-
-        
-        <div className="me">
-            <img src={Me} alt="img alucion a mi" />
-            <h2>José Emilio Antonio Jiménez</h2>
-        </div>
-
-        <div className="content-contact">
-
+      <div className="content-contact">
         {contactData.map((contact) => (
-        <div key={contact.id} className="contact-card">
-            {/* Línea 1: Ícono + Tipo (alineados horizontalmente) */}
+          <div key={contact.id} className={`glass card contact-card ${contact.tipo.toLowerCase()}`}>
             <div className="contact-header">
-            <FontAwesomeIcon 
-                icon={iconMap[contact.tipo]} 
-                className="contact-icon" 
-            />
-            <h3 className="contact-type">{contact.tipo}</h3>
+              <div className="ic"><FontAwesomeIcon icon={iconMap[contact.tipo]} /></div>
+              <h3>{contact.tipo}</h3>
             </div>
 
-            {/* Línea 2: Dato (ej: correo, número) */}
             <p className="contact-data">{contact.dato}</p>
 
-            {/* Línea 3: Botón de acción */}
-            <a
-            href={contact.enlace}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`contact-button ${contact.tipo.toLowerCase()}`}
-            >
-            {getButtonText(contact.tipo)}
-            </a>
-        </div>
+            {contact.enlace && (
+              <a
+                href={contact.enlace}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn ghost contact-button"
+              >
+                {getButtonText(contact.tipo)}
+              </a>
+            )}
+          </div>
         ))}
-        </div>
-
-    </div>
-    
+      </div>
+    </section>
   );
 };
 

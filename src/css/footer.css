@@ -1,51 +1,14 @@
-/* Redes sociales */
+footer { padding-bottom: 24px; }
+
 .footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(33,45,58);
-    color: white;
-    padding: 10px 0;
+  display: flex; justify-content: center; align-items: center; gap: 28px;
+  padding: 14px 18px; border-radius: 18px;
 }
 
-.footer-social div {
-    text-align: center;
-}
-
-.footer-social p {
-    margin: 5px 0 0 0;
-    font-size: 14px;
-    color: white;
-}
-
-/* Íconos de Font Awesome */
 .footer-social a {
-    font-size: 24px;
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--muted); font-size: 14px; font-weight: 500;
+  transition: color .15s, transform .15s;
 }
-
-.footer-social a:hover {
-    transform: scale(1.1);
-    color: #3b82f6; /* Cambia el color al pasar el cursor */
-}
-
-/* Enlaces generales */
-.enlace {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.enlace li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.enlace li a:hover {
-    text-decoration: underline;
-}
+.footer-social a i { font-size: 20px; }
+.footer-social a:hover { color: var(--cyan); transform: translateY(-2px); }
