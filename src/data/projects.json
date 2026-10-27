@@ -19,7 +19,7 @@
     },
     {
         "id": 2,
-        "nombre": "Crónicas de Valdoria 3D",
+        "nombre": "Fantasy",
         "lenguajes": "Godot 4, C#",
         "descripcion": "Juego de fantasía medieval en primera persona que estoy desarrollando en Godot Engine 4 con C#.\n\nEl mundo tiene ciclo de día y noche, estaciones y clima. Puedes combatir con armas y magia, talar árboles y picar rocas, cultivar la tierra, preparar pociones en el caldero, cocinar, construir edificios y relacionarte con los NPCs del reino.",
         "horizontal": true,
