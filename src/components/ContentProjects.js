@@ -7,7 +7,7 @@ const RESUME_MS = 8000;
 const PLACEHOLDERS = 3;
 
 // Carrusel con scroll-snap: flechas, puntos, deslizar con el dedo y autoplay que se pausa al interactuar
-const Carousel = ({ imagenes, nombre }) => {
+const Carousel = ({ imagenes, nombre, horizontal }) => {
     const track = useRef(null);
     const [pages, setPages] = useState(1);
     const [current, setCurrent] = useState(0);
@@ -56,7 +56,7 @@ const Carousel = ({ imagenes, nombre }) => {
         <div className="carousel" onPointerDown={pause} onMouseEnter={pause} onFocus={pause}>
             <div className="track" ref={track} onScroll={() => requestAnimationFrame(measure)}>
                 {slides.map((img, i) => (
-                    <div key={i} className={`slide ${img && img.includes("autoplay") ? "wide" : ""}`}>
+                    <div key={i} className={`slide ${horizontal || (img && img.includes("autoplay")) ? "wide" : ""}`}>
                         {img ? (
                             <img src={require(`../img/${img}`)} alt={`${nombre} ${i + 1}`} loading="lazy" />
                         ) : (
@@ -117,7 +117,7 @@ const ContentProjects = () => {
                 )}
               </div>
 
-              <Carousel imagenes={item.imagenes || []} nombre={item.nombre} />
+              <Carousel imagenes={item.imagenes || []} nombre={item.nombre} horizontal={item.horizontal} />
             </article>
           ))}
         </div>
