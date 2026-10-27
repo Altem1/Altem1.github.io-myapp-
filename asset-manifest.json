@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "/Altem1.github.io-myapp-/static/css/main.a5a4ba71.css",
-    "main.js": "/Altem1.github.io-myapp-/static/js/main.195dc097.js",
+    "main.css": "/Altem1.github.io-myapp-/static/css/main.10ea82b3.css",
+    "main.js": "/Altem1.github.io-myapp-/static/js/main.718c697b.js",
     "static/js/453.ababb8c1.chunk.js": "/Altem1.github.io-myapp-/static/js/453.ababb8c1.chunk.js",
     "static/media/Primos.png": "/Altem1.github.io-myapp-/static/media/Primos.546ea02080fe737330c7.png",
     "static/media/Sabores.png": "/Altem1.github.io-myapp-/static/media/Sabores.85a336ef47151d5f3fd3.png",
     "static/media/Altem.png": "/Altem1.github.io-myapp-/static/media/Altem.cc45c51be98a6cc55a81.png",
+    "static/media/bosque.webp": "/Altem1.github.io-myapp-/static/media/bosque.0c2b9bc0327696ef45ef.webp",
+    "static/media/pradera.webp": "/Altem1.github.io-myapp-/static/media/pradera.e5ab81e61c4d27c604f6.webp",
     "static/media/AppNotas.png": "/Altem1.github.io-myapp-/static/media/AppNotas.2b8163cdb7224a863117.png",
+    "static/media/inicio.webp": "/Altem1.github.io-myapp-/static/media/inicio.beacb324c3438b2b1309.webp",
+    "static/media/lista.webp": "/Altem1.github.io-myapp-/static/media/lista.2d9dec7d13cb00aa6348.webp",
     "static/media/C++.png": "/Altem1.github.io-myapp-/static/media/C++.e6de22a81b049b3abc11.png",
+    "static/media/perfil.webp": "/Altem1.github.io-myapp-/static/media/perfil.28eba1c3bd5de3efbc65.webp",
     "static/media/UkiList.png": "/Altem1.github.io-myapp-/static/media/UkiList.50340b60851fd8655a4f.png",
     "static/media/LogoGit.png": "/Altem1.github.io-myapp-/static/media/LogoGit.0c9c352f7bfb0e7368be.png",
+    "static/media/menu.webp": "/Altem1.github.io-myapp-/static/media/menu.9c3f36878903bb59ad54.webp",
+    "static/media/estadisticas.webp": "/Altem1.github.io-myapp-/static/media/estadisticas.1643e9e4f4af216c1ce0.webp",
+    "static/media/autoplay.webp": "/Altem1.github.io-myapp-/static/media/autoplay.b9a4101ed3a80e5a55d8.webp",
+    "static/media/sync.webp": "/Altem1.github.io-myapp-/static/media/sync.656d64b2df2021423ec9.webp",
+    "static/media/episodios.webp": "/Altem1.github.io-myapp-/static/media/episodios.6202c1e8ded66fac4dfb.webp",
     "index.html": "/Altem1.github.io-myapp-/index.html",
-    "main.a5a4ba71.css.map": "/Altem1.github.io-myapp-/static/css/main.a5a4ba71.css.map",
-    "main.195dc097.js.map": "/Altem1.github.io-myapp-/static/js/main.195dc097.js.map",
+    "main.10ea82b3.css.map": "/Altem1.github.io-myapp-/static/css/main.10ea82b3.css.map",
+    "main.718c697b.js.map": "/Altem1.github.io-myapp-/static/js/main.718c697b.js.map",
     "453.ababb8c1.chunk.js.map": "/Altem1.github.io-myapp-/static/js/453.ababb8c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5a4ba71.css",
-    "static/js/main.195dc097.js"
+    "static/css/main.10ea82b3.css",
+    "static/js/main.718c697b.js"
   ]
 }
