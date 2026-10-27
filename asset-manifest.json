@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Altem1.github.io-myapp-/static/css/main.10ea82b3.css",
-    "main.js": "/Altem1.github.io-myapp-/static/js/main.718c697b.js",
+    "main.js": "/Altem1.github.io-myapp-/static/js/main.72f846e6.js",
     "static/js/453.ababb8c1.chunk.js": "/Altem1.github.io-myapp-/static/js/453.ababb8c1.chunk.js",
     "static/media/Primos.png": "/Altem1.github.io-myapp-/static/media/Primos.546ea02080fe737330c7.png",
     "static/media/Sabores.png": "/Altem1.github.io-myapp-/static/media/Sabores.85a336ef47151d5f3fd3.png",
@@ -22,11 +22,11 @@
     "static/media/episodios.webp": "/Altem1.github.io-myapp-/static/media/episodios.6202c1e8ded66fac4dfb.webp",
     "index.html": "/Altem1.github.io-myapp-/index.html",
     "main.10ea82b3.css.map": "/Altem1.github.io-myapp-/static/css/main.10ea82b3.css.map",
-    "main.718c697b.js.map": "/Altem1.github.io-myapp-/static/js/main.718c697b.js.map",
+    "main.72f846e6.js.map": "/Altem1.github.io-myapp-/static/js/main.72f846e6.js.map",
     "453.ababb8c1.chunk.js.map": "/Altem1.github.io-myapp-/static/js/453.ababb8c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10ea82b3.css",
-    "static/js/main.718c697b.js"
+    "static/js/main.72f846e6.js"
   ]
 }
